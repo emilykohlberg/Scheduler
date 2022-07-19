@@ -1,17 +1,8 @@
 import React, { useState } from 'react';
-import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet } from 'react-native';
 import Form from '../Form';
 import * as Yup from 'yup';
 import { firebase } from '../firebase';
-
-// const Field = ({label, value}) => {
-//   return (
-//     <View style={styles.fieldContainer}>
-//       <Text style={styles.label}>{label}</Text>
-//       <Text style={styles.field}>{value}</Text>
-//     </View>
-//   );
-// };
 
 const validationSchema = Yup.object().shape({
     id: Yup.string()
